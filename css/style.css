@@ -41,6 +41,7 @@ body{
 	top: 0;
 	position: fixed;
 	color: rgb(0,0,0,0.5);
+	transition: top 0.8s;
 }
 .navbar p:hover{
 	color: green;
@@ -97,6 +98,7 @@ body{
 	border-bottom-left-radius: 25%;
 	margin-left: 2%;
 	margin-right: 2%;
+	content: justify;
 }
 .header .logo{
 	height: 150px;
@@ -389,4 +391,23 @@ body{
 .management .man .man-img img{
 	width: 200px;
 	height: 200px;
+}
+/**scroll to top btn**/
+#btnScrollToTop{
+	color: #fff;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	border-radius: 50px;
+	background-color: rgb(255,128,0);
+	cursor: pointer;
+	border: none;
+	box-shadow:  0 15px 15px rgb(0,0,0,0.7);
+}
+#btnScrollToTop:hover{
+	width: 70px;
+	box-shadow: none;
+	transition: 1.1s;
+	right: 0;
 }

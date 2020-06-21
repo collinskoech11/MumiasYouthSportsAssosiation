@@ -1,8 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Mumias Youth home</title>
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
 </head>
 	<div class="socials">
 		<div class="item">
@@ -197,6 +201,26 @@
 	</div>
 
  	</div>
+ 	<button id="btnScrollToTop">
+		<i class="material-icons">arrow_upward</i>
+	</button>
+	<script>
+
+			const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+			btnScrollToTop.addEventListener("click",function() {
+				//window.scrollTo(0,0);
+
+
+				window.scrollTo({
+					top: 0,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				//$("html, body").animate({ scrollTop: 0},"slow");
+			});
+		</script>
  	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
