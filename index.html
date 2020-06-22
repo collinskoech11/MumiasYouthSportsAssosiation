@@ -7,6 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 	<link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="icon" href="img/logo.png">
 </head>
 	<div class="socials">
 		<div class="item">
@@ -67,9 +68,9 @@
  <!--control panel-->
  		<div class="ctrl-panel sticky" id="myHeader">
  			<div class="container">
- 				<a href="#"><button class="active">home</button></a>
- 				<button class="emp">employability</button>
- 				<button>various groups</button>
+ 				<a href="#"><button class="active home">home</button></a>
+ 				<a href="employability.html"><button class="emp">employability</button></a>
+ 				<button id="various">various groups</button>
  				<button>contact us</button>
  				<button>Soccer rating</button>
  				<button>more</button>
@@ -80,17 +81,31 @@
  		<div class="summary">
  			<div class="container">
  				<div class="summary-img">
- 					<img src="https://source.unsplash.com/1600x900/?football">
- 				</div>
- 				<div class="navigation">
- 					<button id="prev">
- 						prev
- 					</button>
- 					<button id="next">
- 						next
- 					</button>
+ 					<div class="slider">
+ 						<div class="slideshow">
+ 							
+ 							<img src="img/img.jpg">
+ 							<img src="img/img1.jpg">
+ 							<img src="img/img2.jpg">
+ 							<img src="img/img3.jpg">
+ 							<img src="img/img4.jpg">
+ 							<img src="img/img8.jpg">
+ 							
+ 						</div>
+ 				
+ 						
+ 					</div>
  				</div>
  				<div class="more-btn">
+ 					<div class="navigation">
+ 					
+ 							<button id="prev">
+ 								prev
+ 							</button>
+ 							<button id="next">
+ 								next
+ 							</button>
+ 						</div>
  					<button id="more">
  						More about the club
  					</button>
@@ -204,8 +219,31 @@
  	<button id="btnScrollToTop">
 		<i class="material-icons">arrow_upward</i>
 	</button>
+	<script type="" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="" src="js/jquery.cycle.all.js"></script>
+	<script>
+		$('.slideshow').cycle({
+			next:'#next',
+			prev:'#prev'
+		});
+	</script>
 	<script>
 
+			const various = document.querySelector("#various");
+
+			various.addEventListener("click",function() {
+				
+
+
+				window.scrollTo({
+					top: 550,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				
+			});
+		
 			const btnScrollToTop = document.querySelector("#btnScrollToTop");
 
 			btnScrollToTop.addEventListener("click",function() {
@@ -221,6 +259,7 @@
 				//$("html, body").animate({ scrollTop: 0},"slow");
 			});
 		</script>
+		
  	<script type="text/javascript" src="js/index.js"></script>
 </body>
 </html>
