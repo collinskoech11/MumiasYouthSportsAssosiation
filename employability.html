@@ -14,7 +14,7 @@
  		<div class="navbar">
  			<div class="container">
  				<div class="contact">
- 					<p>Email us/ Contact us</p>
+ 					<button id="contactus">contactus</button>
  				</div>
  				<div class="title">
  					<p>MYSA SC</p>
@@ -83,5 +83,33 @@
 			</div>
 		</div>
 	</div>
+
+
+	<footer>
+	<div class="footer">
+		<h2>How to reach us</h2>
+		<h3>Email us  :   mysasc2020@gmail.com</h3>
+		<h3>P.O.Box 176 Mumias</h3>
+		<h3>tel:+254710132211</h3>
+		<h3>+254703511486</h3>
+	</div>
+</footer>
+
+<script>
+	const contactus = document.querySelector("#contactus");
+
+			contactus.addEventListener("click",function() {
+				//window.scrollTo(0,0);
+
+
+				window.scrollTo({
+					top: 2000,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				//$("html, body").animate({ scrollTop: 0},"slow");
+			});
+</script>
 </body>
 </html>
