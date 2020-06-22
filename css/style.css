@@ -106,6 +106,12 @@ body{
 	float: left;
 	margin-left: 20%;
 }
+@media (max-width: 700px) {
+	.header .h1 {
+		font-size: 10px;
+		padding-left: 35px;	
+		}
+}
 .header .logo img{
 	width: 100px;
 	height: 100px;
@@ -143,6 +149,14 @@ body{
 	margin-right: 3%;
 	box-shadow: 0 15px 15px rgb(0,0,0,0.7);
 }
+@media (max-width:700px){
+	.ctrl-panel button{
+		font-size: 10px;
+	}
+	.ctrl-panel .emp{
+		width: 17%;
+	}
+}
 .ctrl-panel button:hover{
 	box-shadow: none;
 	background-color: rgb(255,128,0,0.8);
@@ -153,6 +167,12 @@ body{
 }
 .ctrl-panel button.active{
 	margin-left: 1%;
+	box-shadow: none;
+	background-color: rgb(255,128,0,0.8);
+	transform: scale(1.1);
+	transition: 1.1s;
+	cursor: pointer;
+
 }
 /**summary image area**/
 .summary{
@@ -241,6 +261,11 @@ body{
 	text-align: center;
 	align-items:center;
 }
+@media (max-width: 700px){
+	.who{
+		height: 500px;
+	}
+}
 .who-text h3{
 	font-size: 35px;
 	color: #fff;
@@ -292,6 +317,18 @@ body{
 	margin-left: 3%;
 	margin-top: 5%;
 	margin-bottom: 5%
+}
+@media(max-width: 700px){
+	.ages .age-min {
+		height: 1050px;
+	}
+	.ages .age-max{
+		height: 1050px;
+	}
+	.ages button{
+		margin-left: 30%;
+		margin-right: 40%;
+	}
 }
 .ages h4{
 	text-transform: capitalize;
@@ -365,8 +402,14 @@ body{
 	display: block;
 	text-align: center;
 	text-transform: capitalize;
-	overflow-y: scroll;
-	overflow-x: hidden;
+}
+@media (max-width: 700px){
+	.management{
+		height: 800px;
+	}
+	.management .man{
+		height: 700px;
+	}
 }
 .management .man h4{
 	padding-top: 10px;
@@ -387,6 +430,13 @@ body{
 	margin-left: 30%;
 	margin-right: 30%;
 	overflow:hidden;
+}
+@media(max-width: 700px){
+	.management .man .man-img{
+		width: 70%;
+		height: 20%;
+		margin-left: 15%;
+	}
 }
 .management .man .man-img img{
 	width: 200px;
