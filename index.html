@@ -43,12 +43,9 @@
  					<p>MYSA SC</p>
  				</div>
  				<div class="account">
- 					<div class="login">
- 						<a href="#"><p>Login /</p></a>
- 					</div>
- 					<div class="signUp">
- 						<a href="#"><p>Sign Up</p></a>
- 					</div>
+ 					
+ 					<a href="login.html"><button>login/signup</button></a>
+ 				
  				</div>
  			</div>
  		</div>
@@ -73,7 +70,7 @@
  				<button id="various">various groups</button>
  				<button>contact us</button>
  				<button>Soccer rating</button>
- 				<button>more</button>
+ 				<button id="more">more</button>
  			</div>
  		</div>
 
@@ -106,8 +103,8 @@
  								next
  							</button>
  						</div>
- 					<button id="more">
- 						More about the club
+ 					<button id="moreAbout">
+ 						moreAbout
  					</button>
  				</div>
  			</div>
@@ -215,6 +212,17 @@
 		</div>
 	</div>
 
+
+<!--video area-->
+
+	<div class="vid-area">
+		<video autoplay controls muted loop id="myVideo">
+  			<source src="vid/mysa.mp4" type="video/mp4">
+		</video>
+	</div>
+
+
+
  	</div>
  	<button id="btnScrollToTop">
 		<i class="material-icons">arrow_upward</i>
@@ -252,6 +260,42 @@
 
 				window.scrollTo({
 					top: 0,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				//$("html, body").animate({ scrollTop: 0},"slow");
+			});
+
+
+
+
+			const more = document.querySelector("#more");
+
+			more.addEventListener("click",function() {
+				//window.scrollTo(0,0);
+
+
+				window.scrollTo({
+					top: 600,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				//$("html, body").animate({ scrollTop: 0},"slow");
+			});
+
+
+
+
+			const moreAbout = document.querySelector("#moreAbout");
+
+			moreAbout.addEventListener("click",function() {
+				//window.scrollTo(0,0);
+
+
+				window.scrollTo({
+					top: 600,
 					left: 0,
 					behavior: "smooth"
 				});
