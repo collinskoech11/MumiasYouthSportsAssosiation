@@ -169,7 +169,7 @@ body{
 .ctrl-panel{
 	width: 95%;
 	height: 50px;
-	background-color: rgb(0,0,0,0.3);
+	background-color: rgb(0,0,0);
 	margin-left: 2.5%;
 	margin-right: 2.5%;
 	display: inline-block;
@@ -186,7 +186,7 @@ body{
 	float: left;
 	margin-top: 5px;
 	margin-right: 3%;
-	box-shadow: 0 15px 15px rgb(0,0,0,0.7);
+	box-shadow: 0 15px 15px rgb(250,128,0,0.3);
 }
 @media (max-width:700px){
 	.ctrl-panel button{
@@ -194,6 +194,14 @@ body{
 	}
 	.ctrl-panel .emp{
 		width: 17%;
+	}
+}
+@media (max-width: 500px){
+	.ctrl-panel button{
+		font-size: 8px;
+	}
+	.ctrl-panel .emp{
+		width: 18%;
 	}
 }
 .ctrl-panel button:hover{
@@ -321,18 +329,18 @@ body{
 	background-attachment: fixed;
 	background-color: rgb(0,0,0,0.3);
 	width: 100%;
-	height: 300px;
+	height: 200px;
 	text-align: center;
 	align-items:center;
 }
 @media (max-width: 700px){
 	.who{
-		height: 500px;
+		height: 300px;
 	}
 }
 .who-text h3{
 	font-size: 35px;
-	color: #fff;
+	color: rgb(250,150,0);
 	padding-top: 30px;
 	text-transform: capitalize;
 }
@@ -342,7 +350,14 @@ body{
 	padding-top: 30px;
 	font-weight: bold;
 }
-
+.who-b{
+	background-color: rgb(0,0,0);
+}
+.employ .employee .who-text{
+	height: 400px;
+	text-align: center;
+	background-color: rgb(0,0,0,0.3);
+}
 /**ages**/
 
 .ages{
@@ -382,16 +397,34 @@ body{
 	margin-top: 5%;
 	margin-bottom: 5%
 }
-@media(max-width: 700px){
-	.ages .age-min {
-		height: 1050px;
+@media(max-width: 800px){
+	.age .age-min{
+		height: 700px;
 	}
+	.age .age-max{
+		height: 900px;
+	}
+}
+@media(max-width: 700px){
+	.ages{
+		height: 1300px;
+	}
+	.ages .age-min {
+		width: 80%;
+		height: 500px;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+
 	.ages .age-max{
-		height: 1050px;
+		height: 650px;
+		width:80%;
+		margin-left: 7%;
+		margin-right: 7%;
 	}
 	.ages button{
-		margin-left: 30%;
-		margin-right: 40%;
+		margin-left: 35%;
+		margin-right: 35%;
 	}
 }
 .ages h4{
@@ -412,7 +445,6 @@ body{
 	height: 30px;
 	border-radius: 5px;
 	z-index: 3;
-	margin-top: -70px;
 	background-color: rgb(255,128,0);
 	border: 1px solid rgb(255,128,0,0.7);
 	margin-left: 40%;
@@ -420,7 +452,17 @@ body{
 	color:#fff;
 	font-weight: bold;
 	text-transform: uppercase;
+}
+.ages .age-min button{
+	margin-top: 100px;
+}
+.ages .age-max button{
 	margin-top: 10px;
+}
+@media (max-width: 700px){
+	.ages .age-min button{
+		margin-top:20px;
+	}
 }
 .ages button:hover{
 	box-shadow: 0 15px 15px rgb(0,0,0,0.7);
@@ -437,12 +479,16 @@ body{
 .management{
 	width: 100%;
 	height: auto;
-	background-color: rgb(0,150,0,0.3);
+	background-color: rgb(0,0,0);
 }
 .management .title{
 	width: 100%;
 	height: 30px;
 	text-align: center;
+	color: rgb(250,128,0);
+}
+.management .man .man-text h4{
+	color: rgb(250,128,0);
 }
 .management .title h3{
 	font-weight: bold;
@@ -469,10 +515,12 @@ body{
 }
 @media (max-width: 700px){
 	.management{
-		height: 800px;
+		height: 1100px;
 	}
 	.management .man{
-		height: 700px;
+		height: 450px;
+		width: 45%;
+		margin-left: 2.5%;
 	}
 }
 .management .man h4{
@@ -498,7 +546,7 @@ body{
 @media(max-width: 700px){
 	.management .man .man-img{
 		width: 70%;
-		height: 20%;
+		height: 30%;
 		margin-left: 15%;
 	}
 }
@@ -563,9 +611,12 @@ body{
 	background-color: rgb(0,0,0);
 	text-align: center;
 	color: #fff;
-	height: 200px;
+	height: 240px;
 	width: 100%;
 }
 .footer h3{
 	padding: 10px;
+}
+.footer span{
+	color: rgb(250,128,0);
 }

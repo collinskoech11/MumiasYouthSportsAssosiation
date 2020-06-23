@@ -50,3 +50,70 @@ const contact = document.querySelector("#contact");
 
 				
 			});
+
+			const btnScrollToTop = document.querySelector("#btnScrollToTop");
+
+			btnScrollToTop.addEventListener("click",function() {
+				//window.scrollTo(0,0);
+
+
+				window.scrollTo({
+					top: 0,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				//$("html, body").animate({ scrollTop: 0},"slow");
+			});
+
+
+
+
+			const more = document.querySelector("#more");
+
+			more.addEventListener("click",function() {
+				//window.scrollTo(0,0);
+
+
+				window.scrollTo({
+					top: 600,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				//$("html, body").animate({ scrollTop: 0},"slow");
+			});
+
+
+
+
+			const moreAbout = document.querySelector("#moreAbout");
+
+			moreAbout.addEventListener("click",function() {
+				//window.scrollTo(0,0);
+
+
+				window.scrollTo({
+					top: 600,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				//$("html, body").animate({ scrollTop: 0},"slow");
+			});
+
+
+			const contactus = document.querySelector("#contactus");
+
+			contactus.addEventListener("click",function() {
+				//window.scrollTo(0,0);
+
+
+				window.scrollTo({
+					top: 2000,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				//$("html, body").animate({ scrollTop: 0},"slow");
+			});
