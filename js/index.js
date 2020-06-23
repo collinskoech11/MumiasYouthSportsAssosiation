@@ -17,3 +17,36 @@ function headerPosFunction() {
     header.classList.remove("sticky");
   }
 }
+
+
+
+const contact = document.querySelector("#contact");
+
+			contact.addEventListener("click",function() {
+				
+
+
+				window.scrollTo({
+					top: 2000,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				
+			});
+		
+
+		const various = document.querySelector("#various");
+
+			various.addEventListener("click",function() {
+				
+
+
+				window.scrollTo({
+					top: 550,
+					left: 0,
+					behavior: "smooth"
+				});
+
+				
+			});
