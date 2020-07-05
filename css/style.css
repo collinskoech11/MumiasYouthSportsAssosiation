@@ -69,6 +69,11 @@ body{
 	margin-right: 10px;
 	padding-top: 5px;
 }
+@media(max-width: 900px){
+	.navbar .title{
+		margin-left: 20%;
+	}
+}
 .navbar .account a{
 	text-decoration: none;
 	color: rgb(0,0,0,0.5);
@@ -169,13 +174,14 @@ body{
 .ctrl-panel{
 	width: 95%;
 	height: 50px;
-	background-color: rgb(0,0,0);
-	margin-left: 2.5%;
-	margin-right: 2.5%;
+	background-color: rgb(0,0,0,0.03);
+	margin-left: 2.2%;
+	margin-right: 2.2%;
 	display: inline-block;
+	align-items: center;
 }
 .ctrl-panel button{
-	width: 12%;
+	width: 14%;
 	height: 30px;
 	background-color: rgb(255,128,0);
 	border: 1px solid rgb(255,128,0,0.7);
@@ -185,8 +191,9 @@ body{
 	text-transform: uppercase;
 	float: left;
 	margin-top: 5px;
-	margin-right: 3%;
-	box-shadow: 0 15px 15px rgb(250,128,0,0.3);
+	margin-left:  3%;
+
+	box-shadow: 0 15px 15px rgb(0,0,0);
 }
 @media (max-width:700px){
 	.ctrl-panel button{
@@ -611,7 +618,7 @@ body{
 	background-color: rgb(0,0,0);
 	text-align: center;
 	color: #fff;
-	height: 240px;
+	height: 255px;
 	width: 100%;
 }
 .footer h3{
