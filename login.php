@@ -107,6 +107,7 @@
     <h3>P.O.Box 176 Mumias</h3>
     <h3>tel:+254710132211</h3>
     <h3>+254703511486</h3>
+    <h4>Dsigned and coded by Collins Koech email @ collinskoechck34@gmail.com</h4>
   </div>
 </footer>
 </body>
