@@ -333,7 +333,7 @@ body{
 
 
 .who{
-	background-image: url(https://source.unsplash.com/1600x900/?more);
+	background-image: url(https://source.unsplash.com/1600x900/?soccer);
 	background-attachment: fixed;
 	background-color: rgb(0,0,0,0.3);
 	width: 100%;
@@ -348,7 +348,7 @@ body{
 }
 .who-text h3{
 	font-size: 35px;
-	color: rgb(250,150,0);
+	color: rgb(250,0,0);
 	padding-top: 30px;
 	text-transform: capitalize;
 }
@@ -376,7 +376,7 @@ body{
 	margin-top: 10px;
 	text-align: center;
 	align-items: center;
-	background-image: url(https://source.unsplash.com/1600x900/?players);
+	background-image: url(https://source.unsplash.com/1600x900/?soccer-players);
 	background-attachment: fixed;
 }
 .ages .age-min{
@@ -559,8 +559,8 @@ body{
 	}
 }
 .management .man .man-img img{
-	width: 200px;
-	height: 200px;
+	width: 100%;
+	height: 100%;
 }
 /**scroll to top btn**/
 #btnScrollToTop{
@@ -585,7 +585,7 @@ body{
 	width: 95%;
 	height: auto;
 	overflow: hidden;
-	background-image: url(https://source.unsplash.com/1600x900/?players);
+	background-image: url(https://source.unsplash.com/1600x900/?soccer-players);
 	margin: 2.5%;
 	text-align: center;
 	background-attachment: fixed;
