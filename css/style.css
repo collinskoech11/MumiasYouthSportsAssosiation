@@ -21,6 +21,11 @@ body{
 	left: 10px;
 	position: fixed;
 }
+.socials .mail-item{
+	background-color: rgb(250,0,0,0.4);
+	box-shadow:  0 15px 15px rgb(250,0,0,0.4);
+	border-radius: 10px;
+}
 .socials .item img{
 	width: 30px;
 	height: 30px;
