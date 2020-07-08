@@ -117,3 +117,14 @@ const contact = document.querySelector("#contact");
 
 				//$("html, body").animate({ scrollTop: 0},"slow");
 			});
+
+
+const join = document.querySelector("#join");
+join.addEventListener("click",function() {
+	window.scrollTo({
+		top:2000,
+		left:0,
+		behavior:"smooth"
+
+	});
+});
