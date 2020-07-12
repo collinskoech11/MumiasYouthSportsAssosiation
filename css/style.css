@@ -201,7 +201,7 @@ body{
 
 	box-shadow: 0 15px 15px rgb(0,0,0);
 }
-@media (max-width:700px){
+@media screen and (max-width:700px){
 	.ctrl-panel button{
 		font-size: 10px;
 	}
@@ -209,7 +209,7 @@ body{
 		width: 17%;
 	}
 }
-@media (max-width: 500px){
+@media screen and (max-width: 500px){
 	.ctrl-panel button{
 		font-size: 8px;
 	}
@@ -347,7 +347,7 @@ body{
 	text-align: center;
 	align-items:center;
 }
-@media (max-width: 700px){
+@media screen and (max-width: 700px){
 	.who{
 		height: 300px;
 	}
@@ -411,7 +411,7 @@ body{
 	margin-top: 5%;
 	margin-bottom: 5%
 }
-@media(max-width: 800px){
+@media screen and (max-width: 800px){
 	.age .age-min{
 		height: 700px;
 	}
@@ -419,7 +419,7 @@ body{
 		height: 900px;
 	}
 }
-@media(max-width: 700px){
+@media screen and (max-width: 700px){
 	.ages{
 		height: 1300px;
 	}
@@ -473,7 +473,7 @@ body{
 .ages .age-max button{
 	margin-top: 10px;
 }
-@media (max-width: 700px){
+@media screen and (max-width: 700px){
 	.ages .age-min button{
 		margin-top:20px;
 	}
@@ -527,7 +527,7 @@ body{
 	text-align: center;
 	text-transform: capitalize;
 }
-@media (max-width: 700px){
+@media screen and (max-width: 700px){
 	.management{
 		height: 1100px;
 	}
@@ -557,7 +557,7 @@ body{
 	margin-right: 30%;
 	overflow:hidden;
 }
-@media(max-width: 700px){
+@media screen and (max-width: 700px){
 	.management .man .man-img{
 		width: 70%;
 		height: 30%;
@@ -628,7 +628,7 @@ body{
 	height: 275px;
 	width: 100%;
 }
-@media(max-width: 900px){
+@media screen and (max-width: 900px){
 	.footer{
 		height: 295px;
 	}
