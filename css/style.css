@@ -265,6 +265,12 @@ body{
 	margin-left: -50%;
 }
 **/
+@media screen and (max-width: 700px){
+	.summary .summary-img img{
+		width: auto;
+		margin-left: -20%;
+	}
+}
 .summary .summary-img{
 	overflow: hidden;
 	height: 400px;
@@ -283,6 +289,14 @@ body{
 .summary .slideshow{
 	z-index: -3;
 }
+@media screen and (max-width: 700px){
+	.summary  .navigation #prev{
+		margin-left: 15%;
+	}
+	.summary  .navigation #next{
+		margin-left: 65%;
+	}
+}
 .summary img{
 	z-index: -3;
 }
@@ -295,7 +309,7 @@ body{
 	font-weight: bold;
 }
 .summary .navigation button{
-	width: 11		0px;
+	width: 110px;
 	height: 30px;
 	background-color: rgb(255,0,0,0.8);
 	border: 1px solid rgb(255,0,0,0.7);
@@ -441,6 +455,14 @@ body{
 		margin-right: 35%;
 	}
 }
+@media screen and (max-width: 500px){
+	.ages{
+		height: 1400px;
+	}
+	.ages .age-min{
+		height: 600px;
+	}
+}
 .ages h4{
 	text-transform: capitalize;
 	color: rgb(0,0,0);
@@ -535,6 +557,14 @@ body{
 		height: 450px;
 		width: 45%;
 		margin-left: 2.5%;
+	}
+}
+@media screen and (max-width: 500px){
+	.management .man{
+		height: 650px;
+	}
+	.management{
+		height: 1500px;
 	}
 }
 .management .man h4{
