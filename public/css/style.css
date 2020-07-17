@@ -1,0 +1,671 @@
+*{
+	margin:0;
+	padding: 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	background-color: rgb(250,0,0,0.3);
+}
+.main{
+	width: 100%;
+	height: auto;
+}
+/**socials**/
+.socials{
+	display: block;
+	width: 30px;
+	height:300px;
+	top: 250px;
+	left: 10px;
+	position: fixed;
+}
+.socials .mail-item{
+	background-color: rgb(250,0,0,0.4);
+	box-shadow:  0 15px 15px rgb(250,0,0,0.4);
+	border-radius: 10px;
+}
+.socials .item img{
+	width: 30px;
+	height: 30px;
+}
+.socials .item img:hover{
+	transform: scale(1.1);
+	transition: 1.2s;
+	background-color: rgb(250,0,0,0.7);
+	box-shadow:  0 15px 15px rgb(250,0,0,0.7);
+	border-radius: 10px;
+}
+/**navbar**/
+.navbar{
+	width: 100%;
+	height: 30px;
+	background-color: rgb(250,0,0,0.5);
+	display: inline-block;
+	top: 0;
+	position: fixed;
+	color: rgb(0,0,0,0.5);
+	transition: top 0.8s;
+}
+.navbar p:hover{
+	color: green;
+	cursor: pointer;
+	padding-top: 5px;
+}
+.navbar .contact{
+	float: left;
+	padding-top: 5px;
+	padding-left:5px;
+}
+.navbar .title{
+	float: left;
+	padding-top: 5px;
+	align-items: center;
+	margin-left: 35%;
+}
+.navbar .title p:hover{
+	color: rgb(0,0,0);
+	padding-top: 0;
+}
+.navbar .account{
+	float: right;
+	display: inline-block;
+	margin-right: 10px;
+	padding-top: 5px;
+}
+@media(max-width: 900px){
+	.navbar .title{
+		margin-left: 20%;
+	}
+}
+.navbar .account a{
+	text-decoration: none;
+	color: rgb(0,0,0,0.5);
+}
+.navbar .account .login{
+	float: left;
+	padding-right: 3px;
+}
+.navbar .account .signUp{
+	float: left;
+	padding-right: 5px;
+}
+.account button{
+	width: 100%;
+	height: 25px;
+	background-color: rgb(255,0,0);
+	border: 1px solid rgb(255,0,0,0.7);
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	margin-right: 10px;
+	box-shadow: 0 15px 15px rgb(0,0,0,0.7);
+}
+.account button:hover{
+	box-shadow: none;
+	background-color: rgb(255,0,0,0.8);
+	transform: scale(1.1);
+	transition: 1.1s;
+	cursor: pointer;
+}
+.contact button{
+	width: 100%;
+	height: 25px;
+	background-color: rgb(255,0,0);
+	border: 1px solid rgb(255,0,0,0.7);
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	margin-right: 10px;
+	box-shadow: 0 15px 15px rgb(0,0,0,0.7);
+}
+.contact button:hover{
+	box-shadow: none;
+	background-color: rgb(255,0,0,0.8);
+	transform: scale(1.1);
+	transition: 1.1s;
+	cursor: pointer;
+}
+/**header**/
+
+.header{
+	width: 96%;
+	height: 150px;
+	border-bottom: 1px solid rgb(0,0,0,0.5);
+	background-color: rgb(255,0,0); 
+	margin-top: 30px;
+	border-radius: 5px;
+	display: inline-block;
+	border-bottom-right-radius: 80%;
+	border-top-left-radius: 70%;
+	border-top-right-radius: 15%;
+	border-bottom-left-radius: 25%;
+	margin-left: 2%;
+	margin-right: 2%;
+	content: justify;
+}
+.header .logo{
+	height: 150px;
+	width: 25%;
+	float: left;
+	margin-left: 20%;
+}
+@media screen and (max-width: 700px) {
+	.header .h1 {
+		font-size: 10px;
+		padding-left: 35px;	
+		}
+}
+.header .logo img{
+	width: 100px;
+	height: 100px;
+	padding-top:25px;
+	padding-bottom: 25px;
+}
+.header .h1{
+	width: 60%;
+	color: #fff;
+	float: left;
+	margin-top: -100px;
+	margin-left: 30%;
+}
+/**ctrl-panel**/
+
+.ctrl-panel{
+	width: 95%;
+	height: 50px;
+	background-color: rgb(0,0,0,0.03);
+	margin-left: 2.2%;
+	margin-right: 2.2%;
+	display: inline-block;
+	align-items: center;
+}
+.ctrl-panel button{
+	width: 14%;
+	height: 30px;
+	background-color: rgb(255,0,0);
+	border: 1px solid rgb(255,0,0,0.7);
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	float: left;
+	margin-top: 5px;
+	margin-left:  3%;
+
+	box-shadow: 0 15px 15px rgb(0,0,0);
+}
+@media screen and (max-width:700px){
+	.ctrl-panel button{
+		font-size: 10px;
+	}
+	.ctrl-panel .emp{
+		width: 17%;
+	}
+}
+@media screen and (max-width: 500px){
+	.ctrl-panel button{
+		font-size: 8px;
+	}
+	.ctrl-panel .emp{
+		width: 18%;
+	}
+}
+.ctrl-panel button:hover{
+	box-shadow: none;
+	background-color: rgb(255,0,0);
+	transform: scale(1.1);
+	transition: 1.1s;
+	cursor: pointer;
+
+}
+.ctrl-panel button.active{
+	box-shadow: none;
+	background-color: rgb(255,0,0,0.8);
+	transform: scale(1.1);
+	transition: 1.1s;
+	cursor: pointer;
+}
+.ctrl-panel button.home{
+	margin-left: 1%;
+}
+/**summary image area**/
+.summary{
+	width: 95%;
+	height: 400px;
+	background-color: rgb(0,0,0,0.4);
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+	margin-top: 15px;
+	margin-bottom: 30px;
+	border-radius: 5px;
+	overflow:hidden;
+}
+.summary .continer{
+	background-color: rgb(0,0,200,0.2);
+}
+.summary .summary-img img{
+	width: 110%;
+	margin-left: -140px;
+	height: 500px;
+	z-index: -3;
+	margin-top: -30px;
+}
+/**.summary .summary-img video{
+	width: 200%;
+	height: 500px;
+	z-index: -3;
+	margin-top: -30px;
+	margin-left: -50%;
+}
+**/
+@media screen and (max-width: 700px){
+	.summary .summary-img img{
+		width: auto;
+		margin-left: -20%;
+	}
+}
+.summary .summary-img{
+	overflow: hidden;
+	height: 400px;
+	z-index: -3;
+}
+.summary  .navigation #next{
+	float: left;
+	margin-left: 70%;
+	margin-top: -100px;
+}
+.summary  .navigation #prev{
+	float: left;
+	margin-top: -100px;
+	margin-left: 20%;
+}
+.summary .slideshow{
+	z-index: -3;
+}
+@media screen and (max-width: 700px){
+	.summary  .navigation #prev{
+		margin-left: 15%;
+	}
+	.summary  .navigation #next{
+		margin-left: 65%;
+	}
+}
+.summary img{
+	z-index: -3;
+}
+.summary .navigation{
+	margin-top: -150px;
+	z-index: 3;
+	display: inline-block;
+	width: 100%;
+	color: #fff;
+	font-weight: bold;
+}
+.summary .navigation button{
+	width: 110px;
+	height: 30px;
+	background-color: rgb(255,0,0,0.8);
+	border: 1px solid rgb(255,0,0,0.7);
+	border-radius: 5px;
+	color: #fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	z-index: 5;
+	margin-top: -80px;
+}
+.summary button:hover{
+	box-shadow: 0 15px 15px rgb(0,0,0,0.7);
+	background-color: rgb(255,0,0);
+	transform: scale(1.1);
+	transition: 1.1s;
+	cursor: pointer;
+
+}
+.more-btn{
+	width: 100%;
+	margin-top:-70px;
+	align-items: center;
+}
+.more-btn button{
+	width: 180px;
+	height: 30px;
+	border-radius: 5px;
+	z-index: 3;
+	margin-top: -70px;
+	background-color: rgb(255,0,0,0.8);
+	border: 1px solid rgb(255,0,0,0.7);
+	margin-left: 40%;
+	margin-right:40%;
+	color:#fff;
+	font-weight: bold;
+	text-transform: uppercase;
+	z-index: 5;
+}
+
+/**who are we**/
+
+
+.who{
+	background-image: url(https://source.unsplash.com/1600x900/?soccer);
+	background-attachment: fixed;
+	background-color: rgb(0,0,0,0.3);
+	width: 100%;
+	height: 200px;
+	text-align: center;
+	align-items:center;
+}
+@media screen and (max-width: 700px){
+	.who{
+		height: 300px;
+	}
+}
+.who-text h3{
+	font-size: 35px;
+	color: rgb(250,0,0);
+	padding-top: 30px;
+	text-transform: capitalize;
+}
+.who-text p{
+	font-size: 25px;
+	color: #fff;
+	padding-top: 30px;
+	font-weight: bold;
+}
+.who-b{
+	background-color: rgb(0,0,0);
+}
+.employ .employee .who-text{
+	height: 400px;
+	text-align: center;
+	background-color: rgb(0,0,0,0.3);
+}
+/**ages**/
+
+.ages{
+	width: 100%;
+	height: auto;
+	background-color: rgb(100,0,0,0.3);
+	display: inline-block;
+	margin-top: 10px;
+	text-align: center;
+	align-items: center;
+	background-image: url(https://source.unsplash.com/1600x900/?soccer-players);
+	background-attachment: fixed;
+}
+.ages .age-min{
+	float: left;
+	width: 40%;
+	height: 500px;
+	background-color: rgb(0,100,0,0.7);
+	border-radius: 5px;
+	overflow: hidden;
+	margin:5px;
+	margin-left: 7%;
+	margin-right: 3%;
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+.ages .age-max{
+	float: left;
+	width: 40%;
+	height: 500px;
+	background-color: rgb(0,0,100,0.7);
+	border-radius:  5px;
+	overflow: hidden;
+	margin: 5px;
+	margin-right: 7%;
+	margin-left: 3%;
+	margin-top: 5%;
+	margin-bottom: 5%
+}
+@media screen and (max-width: 800px){
+	.age .age-min{
+		height: 700px;
+	}
+	.age .age-max{
+		height: 900px;
+	}
+}
+@media screen and (max-width: 700px){
+	.ages{
+		height: 1300px;
+	}
+	.ages .age-min {
+		width: 80%;
+		height: 500px;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+
+	.ages .age-max{
+		height: 650px;
+		width:80%;
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	.ages button{
+		margin-left: 35%;
+		margin-right: 35%;
+	}
+}
+@media screen and (max-width: 500px){
+	.ages{
+		height: 1400px;
+	}
+	.ages .age-min{
+		height: 600px;
+	}
+}
+.ages h4{
+	text-transform: capitalize;
+	color: rgb(0,0,0);
+	padding: 15px;
+	font-size: 25px;
+	color: rgb(250,0,0);
+}
+.ages p{
+	color: rgb(0,0,0);
+	padding: 10px;
+	font-size: 25px;
+	color: #fff;
+}
+.ages button{
+	width: 100px;
+	height: 30px;
+	border-radius: 5px;
+	z-index: 3;
+	background-color: rgb(255,0,0);
+	border: 1px solid rgb(255,0,0,0.7);
+	margin-left: 40%;
+	margin-right:40%;
+	color:#fff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.ages .age-min button{
+	margin-top: 100px;
+}
+.ages .age-max button{
+	margin-top: 10px;
+}
+@media screen and (max-width: 700px){
+	.ages .age-min button{
+		margin-top:20px;
+	}
+}
+.ages button:hover{
+	box-shadow: 0 15px 15px rgb(0,0,0,0.7);
+	background-color: rgb(255,0,0,0.8);
+	transform: scale(1.1);
+	transition: 1.1s;
+	cursor: pointer;
+
+}
+
+
+/**management section**/
+
+.management{
+	width: 100%;
+	height: auto;
+	background-color: rgb(0,0,0);
+}
+.management .title{
+	width: 100%;
+	height: 30px;
+	text-align: center;
+	color: rgb(250,0,0);
+}
+.management .man .man-text h4{
+	color: rgb(250,0,0);
+}
+.management .title h3{
+	font-weight: bold;
+	text-transform: capitalize;
+	font-size: 30px;
+	padding-top: 20px;
+}
+.management .management-img{
+	display: inline-block;
+	width: 100%;
+	height: 500px;
+	margin-top: 50px;
+}
+.management .man{
+	width: 23%;
+	float:left;
+	margin:  0.5%;
+	border:2px solid rgb(0,0,150);
+	height: 450px;
+	border-radius: 5px;
+	display: block;
+	text-align: center;
+	text-transform: capitalize;
+}
+@media screen and (max-width: 700px){
+	.management{
+		height: 1100px;
+	}
+	.management .man{
+		height: 450px;
+		width: 45%;
+		margin-left: 2.5%;
+	}
+}
+@media screen and (max-width: 500px){
+	.management .man{
+		height: 650px;
+	}
+	.management{
+		height: 1500px;
+	}
+}
+.management .man h4{
+	padding-top: 10px;
+	color: #fff;
+	font-size: 30px;
+}
+.management .man p{
+	padding: 0.2%;
+	font-size: 20px;
+	color: #fff;
+}
+.management .man .man-img{
+	width: 40%;
+	height: 30%;
+	border: 2px solid rgb(150,0,0);
+	border-radius: 50%;
+	margin-top: 20px;
+	margin-left: 30%;
+	margin-right: 30%;
+	overflow:hidden;
+}
+@media screen and (max-width: 700px){
+	.management .man .man-img{
+		width: 70%;
+		height: 30%;
+		margin-left: 15%;
+	}
+}
+.management .man .man-img img{
+	width: 100%;
+	height: 100%;
+}
+/**scroll to top btn**/
+#btnScrollToTop{
+	color: #fff;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	width: 50px;
+	border-radius: 50px;
+	background-color: rgb(255,0,0);
+	cursor: pointer;
+	border: none;
+	box-shadow:  0 15px 15px rgb(0,0,0,0.7);
+}
+#btnScrollToTop:hover{
+	width: 70px;
+	box-shadow: none;
+	transition: 1.1s;
+	right: 0;
+}
+.work-with{
+	width: 95%;
+	height: auto;
+	overflow: hidden;
+	background-image: url(https://source.unsplash.com/1600x900/?soccer-players);
+	margin: 2.5%;
+	text-align: center;
+	background-attachment: fixed;
+}
+.work-with h3{
+	font-size: 35px;
+	color: #fff;
+	padding-top: 30px;
+	text-transform: capitalize;
+}
+.work-with p{
+	font-size: 25px;
+	color: #fff;
+	padding-top: 30px;
+	font-weight: bold;
+}
+/**video area**/
+
+.vid-area{
+	width: 95%;
+	height: 200px;
+	margin: 2.5%;
+	overflow: hidden;
+}
+.vid-area video{
+	width: 100%;
+	height: 400px;
+}
+
+.footer{
+	background-color: rgb(0,0,0);
+	text-align: center;
+	color: #fff;
+	height: 275px;
+	width: 100%;
+}
+@media screen and (max-width: 900px){
+	.footer{
+		height: 295px;
+	}
+}
+.footer h3{
+	padding: 10px;
+}
+.footer span{
+	color: rgb(250,0,0);
+}

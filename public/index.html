@@ -1,65 +1,251 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Welcome to Firebase Hosting</title>
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Mumias Youth home</title>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link rel="stylesheet"  href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="icon" href="img/logo.png">
+</head>
 
-    <!-- update the version number as needed -->
-    <script defer src="/__/firebase/7.16.1/firebase-app.js"></script>
-    <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/7.16.1/firebase-auth.js"></script>
-    <script defer src="/__/firebase/7.16.1/firebase-database.js"></script>
-    <script defer src="/__/firebase/7.16.1/firebase-messaging.js"></script>
-    <script defer src="/__/firebase/7.16.1/firebase-storage.js"></script>
-    <!-- initialize the SDK after all desired features are loaded -->
-    <script defer src="/__/firebase/init.js"></script>
+	<div class="socials">
+		<div class="item">
+			<a href="https://instagram.com/mysa_sc"><img src="img/instagram.png"></a>
+		</div>
+		<br>
+		<div class="item">
+			<a href="#"><img src="img/facebook.png"></a>
+		</div>
+		<br>
+		<div class="item mail-item">
+			<a href="https://mail.google.com"><img src="img/mail.png"></a>
+		</div>
+		<br>
+		<div class="item">
+			<a href="#"><img src="img/twitter.png"></a>
+		</div>
+		<br>
+		<div class="item">
+			<a href="https://web.whatsapp.com"><img src="img/whatsapp.png"></a>
+		</div>
+	</div>
+<body>
+ 	<div class="main">
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px; border-radius: 3px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
-      @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
-      }
-    </style>
-  </head>
-  <body>
-    <div id="message">
-      <h2>Welcome</h2>
-      <h1>Firebase Hosting Setup Complete</h1>
-      <p>You're seeing this because you've successfully setup Firebase Hosting. Now it's time to go build something extraordinary!</p>
-      <a target="_blank" href="https://firebase.google.com/docs/hosting/">Open Hosting Documentation</a>
-    </div>
-    <p id="load">Firebase SDK Loading&hellip;</p>
+ <!--navbar-->
+ 		<div class="navbar">
+ 			<div class="container">
+ 				<div class="contact">
+ 					<button id="contactus">contactus</button>
+ 				</div>
+ 				<div class="title">
+ 					<p>MYSA SC</p>
+ 				</div>
+ 				<div class="account">
+ 					<a href="login.html"><button>login/signup</button></a>
+ 				</div>
+ 			</div>
+ 		</div>
 
-    <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
-        // // The Firebase SDK is initialized and available here!
-        //
-        // firebase.auth().onAuthStateChanged(user => { });
-        // firebase.database().ref('/path/to/ref').on('value', snapshot => { });
-        // firebase.messaging().requestPermission().then(() => { });
-        // firebase.storage().ref('/path/to/ref').getDownloadURL().then(() => { });
-        //
-        // // 🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥🔥
+ <!--header-->
+ 		<div class="header">
+ 			<div class="container">
+ 				<div class="logo">
+ 					<img src="img/logo.png">
+ 				</div>
+ 				<div class="h1">
+ 					<h1>MUMIAS YOUTH SPORTS ASSOSIATION</h1>
+ 				</div>
+ 			</div>
+ 		</div>
 
-        try {
-          let app = firebase.app();
-          let features = ['auth', 'database', 'messaging', 'storage'].filter(feature => typeof app[feature] === 'function');
-          document.getElementById('load').innerHTML = `Firebase SDK loaded with ${features.join(', ')}`;
-        } catch (e) {
-          console.error(e);
-          document.getElementById('load').innerHTML = 'Error loading the Firebase SDK, check the console.';
-        }
-      });
-    </script>
-  </body>
+ <!--control panel-->
+ 		<div class="ctrl-panel sticky" id="myHeader">
+ 			<div class="container">
+ 				<a href="#"><button class="active home">home</button></a>
+ 				<a href="employability.html"><button class="emp">employability</button></a>
+ 				<button id="various">various groups</button>
+ 				<button id="contact">contact</button>
+ 				<button id="more">more</button>
+ 			</div>
+ 		</div>
+ 		
+
+ <!--simmary image area-->
+ 		<div class="summary">
+ 			<div class="container">
+ 				<div class="summary-img">
+ 					<div class="slider">
+ 						<div class="slideshow">
+ 							
+ 							
+ 							<img src="img/img1.jpg">
+ 							<img src="img/img2.jpg">
+ 							<img src="img/img3.jpg">
+ 							<img src="img/img4.jpg">
+ 							<img src="img/img5.jpg">
+ 							<img src="img/img6.jpg">
+ 							<img src="img/img.jpg">
+ 							<img src="img/img8.jpg">
+ 							<img src="img/img9.jpg">
+ 							
+ 							
+ 							
+ 						</div>
+ 				
+ 						
+ 					</div>
+ 				</div>
+ 				<div class="more-btn">
+ 					<div class="navigation">
+ 					
+ 							<button id="prev">
+ 								prev
+ 							</button>
+ 							<button id="next">
+ 								next
+ 							</button>
+ 						</div>
+ 					<button id="moreAbout">
+ 						moreAbout
+ 					</button>
+ 				</div>
+ 			</div>
+ 		</div>
+<!--more about the club-->
+	<div class="who who-b">
+		<div class="who-text">
+			<h3>who we are...</h3>
+			<p>The MYSA SC is a community developement organisation based in Mumias Kakamega county that uses sports to empower and unite the youth while educating them on how to be independent citizens in the society</p>
+		</div>
+	</div>
+
+
+	<div class="ages">
+		<div class="container">
+			<div class="age-min">
+				<div class="container-fluid">
+					<h4>for the 10 - 15 age group</h4>
+					<p>The programm will be organizing career talks and guidance so that the youth can be aware of the career options that are relevant to them  and present in the market.
+						<br>
+					This age group is very crucial  as the children start to find their path in life therefore  guidance is a very important aspect. The youth will also be set up with mentors  in understanding their career </p>
+					<button id="join">
+						Join
+					</button>
+				</div>
+			</div>
+			<div class="age-max">
+				<div class="container-fluid">
+					<h4>for the 16 - 26 age group</h4>
+					<p>The programm aims to conduct trainings which will enhance participants knowledge in particular life skills, leadership  skills and communication skills . The  trainings  will be conducted by the MYSA SC(Mumias Youth Sports Assosiation Soccer Club) and other external partners  working in the same field . <br>The  youth will be  participating in career  guidance with those who have cleared college studies. The programm aims at attaching them with formal companies for their internship programms </p>
+					<a href="#joinus">
+						<button id="join">
+							join
+						</button>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--management-->
+	<div class="management">
+		<div class="container">
+			<div class="title">
+				<h3>Our management team</h3>
+			</div>
+			<div class="management-img">
+				<div class="man">
+					<div class="man-img">
+						<img src="img/manager.png">
+					</div>
+					<div class="man-text">
+						<h4>Club manager</h4>
+						<p>Our manager is responsible for a fitness or health club's optimal operations and management. Each day, our club manager supervises the team's  fitness  and ensure club's members are satisfied with their personal service. ... A successful club manager must also be skilled in supervising a team of people.
+						.</p>
+					</div>
+				</div>
+				<div class="man">
+					<div class="man-img">
+						<img src="img/m-captain.png">
+					</div>
+					<div class="man-text">
+						<h4>Club captain</h4>
+						<p>The Club Captain is the link between the administration of the Club and the athletes. It can be the role of the Club Captain to represent the views of the athletes within the Club, and contribute to the develop the <template></template>
+						</p>
+					</div>
+				</div>
+				<div class="man">
+					<div class="man-img">
+						<img src="img/club-captain.png">
+					</div>
+					<div class="man-text">
+						<h4>Seniors' team captain</h4>
+						<p>The Senior's Team Captain is the link between the administration of the Club and the athletes. It can be the role of the Club Captain to represent the views of the athletes within the Club, and contribute to the develop the team
+						</p>
+					</div>
+				</div>
+				<div class="man">
+					<div class="man-img">
+						<img src="img/s-captain.png">
+					</div>
+					<div class="man-text">
+						<h4>Juniors' team captain</h4>
+						<p>The Junior's team Captain is the link between the administration of the Club and the athletes. It can be the role of the Club Captain to represent the views of the athletes within the Club, and contribute to the develop the team
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+<!--video area-->
+
+	<div class="vid-area">
+		<video autoplay controls muted loop id="myVideo">
+  			<source src="vid/mysa.mp4" type="video/mp4">
+		</video>
+	</div>
+
+<footer>
+	<div class="footer">
+		<h2><span>How to reach us:</span></h2>
+		<h3>Email us  :   mysasc2020@gmail.com</h3>
+		<h3>	P.O.Box 176 Mumias</h3>
+		<h3>tel:+254710132211</h3>
+		<h3>+254703511486</h3>
+		<h3><span>copyright &copy; MYSA SC </span></h3>
+		<br>
+		<h4>Dsigned and Coded by DEVCO254 Contact us at kenyadevco@gmail.com</h4>
+	</div>
+</footer>
+
+ 	</div>
+ 	<button id="btnScrollToTop">
+		<i class="material-icons">arrow_upward</i>
+	</button>
+	<script type="" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script type="" src="js/jquery.cycle.all.js"></script>
+	<script>
+		$('.slideshow').cycle({
+			next:'#next',
+			prev:'#prev'
+		});
+	</script>
+		
+ 	<script type="text/javascript" src="js/index.js"></script>
+ 	<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/7.16.1/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/7.16.1/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+</body>
 </html>
