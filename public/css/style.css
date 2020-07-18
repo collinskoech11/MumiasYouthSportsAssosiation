@@ -363,7 +363,7 @@ body{
 }
 @media screen and (max-width: 700px){
 	.who{
-		height: 300px;
+		height: 800px;
 	}
 }
 .who-text h3{
@@ -382,9 +382,15 @@ body{
 	background-color: rgb(0,0,0);
 }
 .employ .employee .who-text{
-	height: 400px;
+	height: 900px;
 	text-align: center;
 	background-color: rgb(0,0,0,0.3);
+	overflow:hidden;
+}
+@media screen and (max-width: 700px){
+	.employ .employee .who-text{
+		height: 1000px;
+	}
 }
 /**ages**/
 
