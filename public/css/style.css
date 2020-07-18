@@ -457,10 +457,14 @@ body{
 }
 @media screen and (max-width: 500px){
 	.ages{
-		height: 1400px;
+		height: 1650px;
 	}
 	.ages .age-min{
-		height: 600px;
+		height: 700px;
+	}
+	.ages .age-max{
+		height: 800px;
+		overflow: scroll;
 	}
 }
 .ages h4{
@@ -561,7 +565,7 @@ body{
 }
 @media screen and (max-width: 500px){
 	.management .man{
-		height: 650px;
+		height: 700px;
 	}
 	.management{
 		height: 1500px;
