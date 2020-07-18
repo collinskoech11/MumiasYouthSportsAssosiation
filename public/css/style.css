@@ -464,7 +464,6 @@ body{
 	}
 	.ages .age-max{
 		height: 800px;
-		overflow: scroll;
 	}
 }
 .ages h4{
